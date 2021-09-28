@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<ul class="list-group">
+{% for item in movies_list %}
+<li class="list-group-item">
+<span class="text-info"> movie name : </span> <span> {{item.movie.name}} </span>
+<br>
+<span class="text-info"> movie date : </span> <span> {{item.movie.date}} </span>
+</li>
+{% endfor %}
+</ul>
+{% endblock %}
